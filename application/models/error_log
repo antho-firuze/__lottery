@@ -1,0 +1,3 @@
+[31-Mar-2015 14:43:17 America/New_York] PHP Fatal error:  Class 'DataMapper' not found in /home/k8980579/public_html/genesys/application/models/_template.php on line 22
+[31-Mar-2015 14:43:18 America/New_York] PHP Fatal error:  Class 'CI_Model' not found in /home/k8980579/public_html/genesys/application/models/grocery_crud_model.php on line 30
+[31-Mar-2015 14:43:18 America/New_York] PHP Fatal error:  Class 'grocery_CRUD_Model' not found in /home/k8980579/public_html/genesys/application/models/MY_grocery_Model.php on line 2

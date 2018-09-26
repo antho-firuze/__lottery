@@ -1,0 +1,11 @@
+[31-Mar-2015 14:43:40 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/service.php on line 38
+[31-Mar-2015 14:43:40 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/master/views/measure.php on line 193
+[31-Mar-2015 14:43:41 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/others.php on line 38
+[31-Mar-2015 14:43:42 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/water.php on line 38
+[31-Mar-2015 14:43:42 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/item.php on line 38
+[31-Mar-2015 14:43:42 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/salesman.php on line 38
+[31-Mar-2015 14:43:43 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/parking.php on line 39
+[31-Mar-2015 14:43:43 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/suppliers.php on line 38
+[31-Mar-2015 14:43:43 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/item_cat.php on line 38
+[31-Mar-2015 14:43:43 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/power.php on line 39
+[31-Mar-2015 14:43:43 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/master/views/customer.php on line 40

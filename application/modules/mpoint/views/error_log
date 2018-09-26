@@ -1,0 +1,9 @@
+[31-Mar-2015 14:43:45 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/pnt_period.php on line 158
+[31-Mar-2015 14:43:45 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/pnt_receipt.php on line 6
+[31-Mar-2015 14:43:45 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/member.php on line 6
+[31-Mar-2015 14:43:45 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/store.php on line 6
+[31-Mar-2015 14:43:45 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/preview_draw.php on line 9
+[31-Mar-2015 14:43:46 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/pnt_draw.php on line 44
+[31-Mar-2015 14:43:46 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/pnt_prize.php on line 50
+[31-Mar-2015 14:43:46 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/preview_winner.php on line 6
+[31-Mar-2015 14:43:46 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/mpoint/views/pnt_report.php on line 1

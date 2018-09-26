@@ -1,0 +1,1 @@
+[31-Mar-2015 14:47:23 America/New_York] PHP Fatal error:  Call to undefined method TTFontFile::extractCoreInfo() in /home/k8980579/public_html/genesys/application/third_party/mpdf/utils/font_names.php on line 59

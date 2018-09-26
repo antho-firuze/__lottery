@@ -1,0 +1,4 @@
+[31-Mar-2015 14:43:57 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/assetm/views/by_tenant.php on line 49
+[31-Mar-2015 14:43:57 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/assetm/views/unit.php on line 38
+[31-Mar-2015 14:43:57 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/assetm/views/by_owner.php on line 49
+[31-Mar-2015 14:43:57 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/assetm/views/by_unit.php on line 69

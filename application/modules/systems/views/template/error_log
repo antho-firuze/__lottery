@@ -1,0 +1,12 @@
+[31-Mar-2015 14:44:04 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/00-import-jquery-fancybox.php on line 2
+[31-Mar-2015 14:44:04 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/01-menu.php on line 3
+[31-Mar-2015 14:44:05 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/02-content-iframe-default.php on line 1
+[31-Mar-2015 14:44:05 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/02-content-iframe-default.php on line 4
+[31-Mar-2015 14:44:06 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/02-content-iframe-header.php on line 7
+[31-Mar-2015 14:44:06 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/00-import-jquery-ui.php on line 1
+[31-Mar-2015 14:44:06 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/modules/systems/views/template/02-content-iframe.php on line 4
+[31-Mar-2015 14:44:06 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/modules/systems/views/template/04-footer.php on line 3
+[31-Mar-2015 14:44:07 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/00-import.php on line 1
+[31-Mar-2015 14:44:07 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/modules/systems/views/template/maintemplate.php on line 4
+[31-Mar-2015 14:44:07 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/00-import-jquery-jqGrid.php on line 1
+[31-Mar-2015 14:44:08 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/template/00-import-jquery-easyui.php on line 2

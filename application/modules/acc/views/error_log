@@ -1,0 +1,2 @@
+[31-Mar-2015 14:43:55 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/acc/views/gl.php on line 6
+[31-Mar-2015 14:43:56 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/acc/views/coa.php on line 55

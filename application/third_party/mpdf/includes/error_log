@@ -1,0 +1,2 @@
+[31-Mar-2015 14:45:16 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/third_party/mpdf/includes/upperCase.php on line 2
+[31-Mar-2015 14:45:16 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/third_party/mpdf/includes/CJKdata.php on line 18

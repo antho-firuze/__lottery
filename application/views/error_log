@@ -1,0 +1,3 @@
+[31-Mar-2015 14:43:36 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/views/flotr2.php on line 8
+[31-Mar-2015 14:43:36 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/views/welcome_message.php on line 99
+[31-Mar-2015 14:43:36 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/views/comet_client.php on line 7

@@ -1,0 +1,7 @@
+[31-Mar-2015 14:43:37 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/bill_setup.php on line 84
+[31-Mar-2015 14:43:38 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/opt_invoice_type.php on line 55
+[31-Mar-2015 14:43:38 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/invoice.php on line 6
+[31-Mar-2015 14:43:38 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/invoice-old01.php on line 6
+[31-Mar-2015 14:43:39 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/period.php on line 193
+[31-Mar-2015 14:43:39 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/mtr_reading.php on line 7
+[31-Mar-2015 14:43:39 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/billm/views/bill_calc.php on line 6

@@ -1,0 +1,1756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PHD Branch : Genesys User Manual</title>
+
+<style type='text/css' media='all'>@import url('../userguide.css');</style>
+<link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
+
+<script type="text/javascript" src="../nav/nav.js"></script>
+<script type="text/javascript" src="../nav/prototype.lite.js"></script>
+<script type="text/javascript" src="../nav/moo.fx.js"></script>
+<script type="text/javascript" src="../nav/user_guide_menu.js"></script>
+
+<meta http-equiv='expires' content='-1' />
+<meta http-equiv= 'pragma' content='no-cache' />
+<meta name='robots' content='all' />
+<meta name='author' content='ExpressionEngine Dev Team' />
+<meta name='description' content='Genesys User Manual' />
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"Cambria","serif";
+	color:#244061;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	font-variant:small-caps;
+	color:#595959;
+	letter-spacing:.3pt;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:8.0pt;
+	margin-right:.5in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-right:.85in;
+	margin-bottom:6.0pt;
+	margin-left:.85in;
+	line-height:125%;
+	border:none;
+	padding:0in;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+span.MsoSubtleEmphasis
+	{color:#404040;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleReference
+	{font-variant:small-caps;
+	color:#404040;
+	text-decoration:underline;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	font-weight:bold;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	color:#1F497D;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#1F497D;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#244061;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:bold;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#1F497D;
+	font-weight:bold;
+	font-style:italic;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	color:#404040;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:6.0pt;
+	line-height:110%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:.8in .7in .8in .7in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<!-- START NAVIGATION -->
+<div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="masthead">
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td><h1>Genesys User Manual Version 1.0.0</h1></td>
+<td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
+</tr>
+</table>
+</div>
+<!-- END NAVIGATION -->
+
+
+<!-- START BREADCRUMB -->
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td id="breadcrumb">
+<a href="http://Genesys.com/">Genesys Home</a> &nbsp;&#8250;&nbsp;
+<a href="../index.html">User Manual Home</a> &nbsp;&#8250;&nbsp;
+PHD Branch
+</td>
+<!--
+<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="ellislab.com/codeigniter/user-guide/" />Search User Guide&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Go" /></form></td>
+-->
+</tr>
+</table>
+<!-- END BREADCRUMB -->
+
+<br clear="all" />
+
+<div class=WordSection1>
+
+<p class=MsoTitle>PHD (Permintaan Harga dan Delivery)</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Pada
+bagian atas layar pilih Marketing </span><span style='font-size:12.0pt;
+line-height:110%;font-family:Wingdings'>à</span><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'> PHD, klik PHD.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%'><img
+width=186 height=69 id="Picture 1" src="phd_branch_files/image001.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Layar
+akan tampil seperti di bawah ini, terdiri atas 3 (tiga) bagian yaitu: (A) HEADER
+(atas), (B) DETAIL (kiri bawah), dan (B) NOTE &amp; ATTACHMENT (kanan bawah) .</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'><img width=603 height=312 id="Picture 2"
+src="phd_branch_files/image002.jpg"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Data
+PHD memiliki berbagai macam status yang bisa dilihat pada bagian HEADER. Berikut
+status yang menunjukkan bahwa data dapat diubah atau dihapus:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- ENTRY/OPEN              : Untuk PHD
+yang baru di input.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- NEED APPROVAL     : Untuk PHD yang
+siap untuk di kirim ke pusat.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- APPROVED                 : Untuk PHD
+yang sudah terkirim ke pusat, tapi belum di proses.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- REVISED                     : Untuk
+PHD yang telah di revisi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- DONE                           : Untuk
+PHD yang telah di jawab oleh pusat.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Berikut status yang menunjukkan bahwa
+data tidak dapat diubah atau dihapus:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>- APPROVED, PROCESS, REVISED, DEAL</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:110%;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Menambah
+data</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN HEADER ( A ) : </h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Untuk menambah data baru klik icon </span><img
+width=43 height=19 id="Picture 7" src="phd_branch_files/image003.jpg"><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> (A1)
+, maka akan muncul tampilan seperti ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'><img width=375 height=279 id="Picture 16"
+src="phd_branch_files/image004.jpg"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Code                   </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isikan nomor Kode/No PHD.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Reff. Code</span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>
+        : akan otomatis terisi dengan kode PHD jika terjadi revisi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:110.25pt;text-align:
+justify;text-justify:inter-ideograph;text-indent:-88.95pt'><b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Date
+– Closing</span></b><span style='font-size:12.0pt;line-height:110%;font-family:
+"Times New Roman","serif"'>   : klik icon </span><span style='font-size:12.0pt;
+line-height:110%'><img width=20 height=22 id="Picture 17"
+src="phd_branch_files/image005.png"></span><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'> pada sebelah kanan
+field. Field bagian kiri untuk mengisi tanggal pembuatan PHD, field bagian
+kanan untuk mengisi tanggal closing PHD.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Item Category   </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+klik icon </span><span style='font-size:12.0pt;line-height:110%'><img width=21
+height=21 id="Picture 18" src="phd_branch_files/image006.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> pada
+sebelah kanan field untuk memilih item category.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Customer           </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+klik icon </span><span style='font-size:12.0pt;line-height:110%'><img width=21
+height=21 id="Picture 19" src="phd_branch_files/image006.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> pada
+sebelah kanan field untuk memilih customer.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Salesman            </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+klik icon </span><span style='font-size:12.0pt;line-height:110%'><img width=21
+height=21 id="Picture 20" src="phd_branch_files/image006.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> pada
+sebelah kanan field untuk memilih salesman.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Note                    </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isi catatan penting yang berkaitan dengan PHD jika ada.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Jika pada field terdapat icon </span><span
+style='font-size:12.0pt;line-height:110%'><img width=19 height=18
+id="Picture 21" src="phd_branch_files/image007.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> maka
+field harus diisi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Setelah semua data dimasukkan klik
+tombol </span><span style='font-size:12.0pt;line-height:110%'><img width=76
+height=19 id="Picture 42" src="phd_branch_files/image008.jpg"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> ,
+maka list pada header akan bertambah data baru dengan code yang baru saja
+dibuat dengan status “<b>ENTRY</b>”. Jika batal memasukkan data klik icon </span><span
+style='font-size:12.0pt;line-height:110%'><img width=92 height=23
+id="Picture 35" src="phd_branch_files/image009.jpg"></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN DETAIL ( B ) : </h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Untuk menambahkan data stock klik salah
+satu list pada header sesuai dengan nomor PHD yang diinginkan lalu klik icon </span><img
+width=21 height=19 id="Picture 25" src="phd_branch_files/image010.jpg"><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> (B1)
+ pada bagian DETAIL, maka akan muncul tampilan seperti ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'><img width=351 height=310 id="Picture 26"
+src="phd_branch_files/image011.jpg"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Stock Code                 </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+tidak perlu di isi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Stock Name                </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isi dengan nama stock barang.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Stock Size                   </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isi dengan ukuran dari stock barang.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:137.25pt;text-align:
+justify;text-justify:inter-ideograph;text-indent:-115.95pt'><b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Quantity
+– Measure   </span></b><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>: Field bagian kiri untuk mengisi jumlah
+(quantity) dengan cara klik icon </span><span style='font-size:12.0pt;
+line-height:110%'><img width=18 height=23 id="Picture 28"
+src="phd_branch_files/image012.png"></span><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'> pada sebelah kanan
+field atau ketikkan secara manual, field bagian kanan untuk mengisi satuan (measure)
+dengan cara klik icon </span><span style='font-size:12.0pt;line-height:110%'><img
+width=21 height=21 id="Picture 29" src="phd_branch_files/image006.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> pada
+sebelah kanan field untuk memilih satuan.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Note                             </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isi catatan penting yang berkaitan dengan data detail stock jika ada.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Untuk grup box <b>Delivery Time </b>dan <b>Price
+</b>tidak perlu diisi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Jika pada field terdapat icon </span><span
+style='font-size:12.0pt;line-height:110%'><img width=19 height=18
+id="Picture 30" src="phd_branch_files/image007.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> maka
+field harus diisi.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Setelah semua data dimasukkan klik
+tombol </span><span style='font-size:12.0pt;line-height:110%'><img width=76
+height=19 id="Picture 41" src="phd_branch_files/image013.jpg"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> ,
+maka list stock pada bagian DETAIL akan bertambah. Jika batal memasukkan data
+klik icon </span><span style='font-size:12.0pt;line-height:110%'><img width=85
+height=21 id="Picture 33" src="phd_branch_files/image014.jpg"></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN NOTE &amp; ATTACHMENT ( C ):</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Untuk melampirkan berkas atau catatan
+penting </span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>klik
+salah satu list pada header sesuai dengan nomor PHD yang di inginkan, lalu klik
+icon  </span><img width=21 height=19 id="Picture 4"
+src="phd_branch_files/image010.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (C1), maka akan muncul tampilan
+seperti ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=338 height=236 id="Picture 5"
+src="phd_branch_files/image015.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Note      </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+isi dengan catatan penting yang berkaitan dengan berkas lampiran jika ada.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>Attach   </span></b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>:
+klik tombol </span><span style='font-size:12.0pt;line-height:110%'><img
+width=79 height=21 id="Picture 38" src="phd_branch_files/image016.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>  untuk
+memilih berkas yang akan dilampirkan.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Untuk menyimpan klik tombol </span><span
+style='font-size:12.0pt;line-height:110%'><img width=82 height=24
+id="Picture 23" src="phd_branch_files/image017.png"></span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> ,
+maka list pada bagian  NOTE &amp; ATTACHMENT akan bertambah. Jika batal
+memasukkan data klik icon </span><img width=85 height=21 id="Picture 40"
+src="phd_branch_files/image018.jpg"></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Menghapus
+data</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN HEADER ( A ) : </h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Klik salah satu list PHD pada bagian
+HEADER yang akan dihapus lalu klik icon </span><img width=62 height=22
+id="Picture 43" src="phd_branch_files/image019.png"><span style='font-size:
+12.0pt;line-height:110%;font-family:"Times New Roman","serif"'> (A3), maka akan
+muncul seperti ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=288 height=110 id="Picture 44"
+src="phd_branch_files/image020.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Klik tombol ‘OK’ jika data akan dihapus
+atau ‘Cancel’ untuk membatalkan.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Jika system tidak mengijinkan data untuk
+dihapus maka akan muncul notification seperti ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=298 height=130 id="Picture 47"
+src="phd_branch_files/image021.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Klik ‘OK’ untuk kembali.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN DETAIL ( B ) :</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih list stock code yang akan dihapus,
+lalu klik icon </span><img width=21 height=20 id="Picture 48"
+src="phd_branch_files/image022.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (B3), maka akan muncul seperti
+ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=288 height=110 id="Picture 49"
+src="phd_branch_files/image023.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Klik tombol ‘OK’ jika data akan dihapus
+atau ‘Cancel’ untuk membatalkan.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN NOTE &amp; ATTACHMENT ( C ) :</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih list yang akan dihapus, lalu klik
+icon </span><img width=21 height=20 id="Picture 50"
+src="phd_branch_files/image022.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (C1), maka akan muncul seperti
+ini.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=288 height=110 id="Picture 51"
+src="phd_branch_files/image020.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Klik tombol ‘OK’ jika data akan dihapus
+atau ‘Cancel’ untuk membatalkan.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Mengubah
+data</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN HEADER ( A ) :</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih salah satu list PHD yang akan
+diubah datanya lalu klik icon </span><img width=44 height=22 id="Picture 52"
+src="phd_branch_files/image024.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (A2). Ubah data sesuai keinginan.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN DETAIL ( B ) :</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih salah satu list stock yang akan
+diubah datanya lalu klik icon </span><img width=18 height=20 id="Picture 53"
+src="phd_branch_files/image025.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (B2). Ubah data sesuai keinginan.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.3pt'>BAGIAN NOTE &amp; ATTACHMENT ( C ) :</h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><b><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih salah satu list yang akan diubah
+datanya lalu klik icon </span><img width=18 height=20 id="Picture 6"
+src="phd_branch_files/image025.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (C2). Ubah data sesuai keinginan.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Data
+baru PHD yang sudah selesai dibuat dengan status “ENTRY” perlu diubah statusnya
+menjadi “NEED APPROVAL” untuk bisa di proses pada tahap selanjutnya. Cara
+mengubah status :</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>Pilih salah satu list PHD lalu klik icon
+</span><img width=76 height=21 id="Picture 54"
+src="phd_branch_files/image026.jpg"><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman","serif"'> (A6). Ubah Status dari ‘Entry’
+menjadi ‘Need Approval’  lalu klik tombol </span><span style='font-size:12.0pt;
+line-height:110%'><img width=97 height=25 id="Picture 56"
+src="phd_branch_files/image027.jpg"></span><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><img width=322 height=177 id="Picture 55"
+src="phd_branch_files/image028.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Fungsionalitas
+icon</span></p>
+
+<table class=MsoTable15Grid4Accent6 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #F79646 1.0pt;
+  border-right:none;background:#F79646;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0in;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif";color:white'>ICON</span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border:solid #F79646 1.0pt;
+  border-left:none;background:#F79646;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0in;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif";color:white'>KETERANGAN</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A1)
+  - <img width=49 height=20 id="Picture 8" src="phd_branch_files/image029.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menambah data
+  PHD baru pada bagian header</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A2)
+  - <img width=49 height=21 id="Picture 9" src="phd_branch_files/image030.png"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah data
+  PHD pada bagian header</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A3)
+  - <img width=60 height=21 id="Picture 10" src="phd_branch_files/image031.png"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menghapus data
+  PHD pada bagian header</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A4)
+  - <img width=49 height=21 id="Picture 14" src="phd_branch_files/image032.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Revisi data
+  PHD yang masih dalam status “PROSES”</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A5)
+  - <img width=57 height=21 id="Picture 27" src="phd_branch_files/image033.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengkopi data
+  PHD lama, menjadi PHD Baru</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A6)
+  - <img width=65 height=18 id="Picture 12" src="phd_branch_files/image034.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah
+  status “NEED APPROVAL” menjadi “APPROVED”. Serta mengirim data PHD ke PUSAT.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A7)
+  - <img width=72 height=17 id="Picture 34" src="phd_branch_files/image035.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah
+  status “ENTRY/OPEN” menjadi “NEED APPROVAL” atau sebaliknya.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A8)
+  - <img width=65 height=19 id="Picture 15" src="phd_branch_files/image036.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah
+  status “DONE” menjadi “CUST. PENDING”, “CUST. CANCEL”, atau “CUST. DEAL”</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(A9)
+  - <img width=73 height=17 id="Picture 22" src="phd_branch_files/image037.jpg"></span></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menampilkan
+  print out PHD</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(B1)
+  - </span></b><b><img width=19 height=18 id="Picture 67"
+  src="phd_branch_files/image038.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menambah data
+  stock pada bagian detail</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(B2)
+  - </span></b><b><img width=19 height=21 id="Picture 69"
+  src="phd_branch_files/image039.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah data
+  stock pada bagian detail</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(B3)
+  - </span></b><b><img width=19 height=21 id="Picture 70"
+  src="phd_branch_files/image040.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menghapus data
+  stock pada bagian detail</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(C1)
+  - </span></b><b><img width=19 height=18 id="Picture 24"
+  src="phd_branch_files/image038.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menambah note
+  atau berkas file pada bagian note &amp; attachment</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(C2)
+  - </span></b><b><img width=19 height=21 id="Picture 31"
+  src="phd_branch_files/image039.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Mengubah note
+  atau berkas file pada bagian note &amp; attachment</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 valign=top style='width:132.6pt;border:solid #FABF8F 1.0pt;
+  border-top:none;background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>(C3)
+  - </span></b><b><img width=19 height=21 id="Picture 32"
+  src="phd_branch_files/image040.png"></b></p>
+  </td>
+  <td width=439 valign=top style='width:329.5pt;border-top:none;border-left:
+  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
+  background:#FDE9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
+  text-align:justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Menghapus note
+  atau berkas file pada bagian note &amp; attachment</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-21.3pt'><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman","serif"'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>Keterangan
+Status:</span></p>
+
+<table class=MsoTable15Grid4Accent4 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:18.85pt'>
+  <td width=38 style='width:.4in;border:solid #8064A2 1.0pt;border-right:none;
+  background:#8064A2;padding:0in 5.4pt 0in 5.4pt;height:18.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif";color:white'>NO</span></b></p>
+  </td>
+  <td width=209 style='width:156.6pt;border-top:solid #8064A2 1.0pt;border-left:
+  none;border-bottom:solid #8064A2 1.0pt;border-right:none;background:#8064A2;
+  padding:0in 5.4pt 0in 5.4pt;height:18.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif";color:white'>STATUS</span></b></p>
+  </td>
+  <td width=427 style='width:319.9pt;border:solid #8064A2 1.0pt;border-left:
+  none;background:#8064A2;padding:0in 5.4pt 0in 5.4pt;height:18.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif";color:white'>KETERANGAN</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>1</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ENTRY</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd baru
+  dibuat</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>2</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>NEED APPROVAL</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd butuh
+  persetujuan dari pihak yang berwenang untuk mengirimkan phd ke pusat</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>3</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>APPROVED</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>pihak yang
+  berwenang sudah menyetujui phd dan phd sudah masuk ke pusat</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>4</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>PROCESS</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd sudah
+  direspon oleh pusat dan sedang diproses</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>5</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>PARTIAL ANSWER</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>data phd hanya
+  sebagian dijawab oleh pusat</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>6</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DONE</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>pusat sudah
+  menjawab semua data phd yang dikirimkan</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>7</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CUST. CANCEL</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>keterangan
+  bahwa customer menolak penawaran harga</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>8</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CUST. PENDING</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>keterangan
+  bahwa customer belum memberikan jawaban terhadap penawaran harga</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>9</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CUST. DEAL</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>keterangan
+  bahwa customer meyetujui penawaran harga</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>10</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>REVISED
+  (BRANCH)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd direvisi
+  dan sudah tidak bisa diproses</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>11</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CANCEL (HO)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>cabang salah
+  memasukkan kelompok kategori produk, pusat berhak membatalkan phd</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>12</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>NO QUOTE (HO)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>bila tidak
+  mendapat penawaran harga dari beberapa supplier/supplier tidak sanggup
+  menawarkan</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>13</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>REJECT (HO)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd dari
+  cabang tidak lengkap, dan staff phd sudah meminta kelengkapan data ke cabang,
+  dan tidak mendapatkan data setelah 2 minggu</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>14</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>NOT PROCESS
+  (HO)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>phd berupa
+  barang yang di luar lingkup perusahaan, tidak diproses karena sudah disetujui
+  oleh RSM/COO</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=38 valign=top style='width:.4in;border:solid #B2A1C7 1.0pt;
+  border-top:none;background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman","serif"'>15</span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.6pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>PRICE LIST
+  (HO)</span></p>
+  </td>
+  <td width=427 valign=top style='width:319.9pt;border-top:none;border-left:
+  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
+  background:#E5DFEC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>item phd
+  tersebut sudah ada di price list, staff phd tidak akan memberikan jawaban
+  harga, cabang dapat mengecek di price list</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.3pt;text-align:justify;
+text-justify:inter-ideograph'><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+</div>
+
+<div id="footer">
+<p>
+&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="../index.html">User Manual Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+</p>
+
+<p> &nbsp;&middot;&nbsp; Copyright &#169; 2013 - 2014 &nbsp;&middot;&nbsp; </p>
+</div>
+
+</body>
+
+</html>

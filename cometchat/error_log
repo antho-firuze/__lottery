@@ -1,0 +1,18 @@
+[31-Mar-2015 14:41:58 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:41:58 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:42:33 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:42:33 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:42:33 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:42:33 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:42:34 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/k8980579/public_html/genesys/cometchat/cron.php on line 81
+[31-Mar-2015 14:42:34 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/k8980579/public_html/genesys/cometchat/cron.php on line 91
+[31-Mar-2015 14:43:07 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:07 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:11 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:11 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:11 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:11 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:12 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:12 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:16 America/New_York] PHP Warning:  session_start(): Cannot send session cookie - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98
+[31-Mar-2015 14:43:16 America/New_York] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent in /home/k8980579/public_html/genesys/cometchat/cometchat_init.php on line 98

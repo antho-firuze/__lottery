@@ -1,0 +1,8 @@
+schedule task (localhost)
+=========================
+schtasks /create /sc minute /mo 1 /tn "cronjob-phd-notification" /tr "c:\xampp\php\php.exe d:\Dropbox\htdocs\_g.ene.sys_\index.php common_functions cronjob_phd_notification"
+
+schedule task (proliant)
+=========================
+schtasks /create /sc minute /mo 1 /tn "cronjob-phd-notification" /tr "d:\xampp\php\php.exe d:\Dropbox\htdocs\_g.ene.sys_\index.php common_functions cronjob_phd_notification"
+schtasks /create /sc minute /mo 1 /tn "cronjob-phd-notification" /tr "d:\xampp\php\php.exe d:\Dropbox\htdocs\_g.ene.sys_\index.php common_functions cronjob_update_table_master"

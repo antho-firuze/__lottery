@@ -1,0 +1,12 @@
+[31-Mar-2015 14:43:59 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/modules_groups.php on line 7
+[31-Mar-2015 14:43:59 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/modules/systems/views/login.php on line 5
+[31-Mar-2015 14:43:59 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/systems/views/branch.php on line 37
+[31-Mar-2015 14:43:59 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/k8980579/public_html/genesys/application/modules/systems/views/users.php on line 105
+[31-Mar-2015 14:43:59 America/New_York] PHP Fatal error:  Call to undefined function site_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/copyright.php on line 2
+[31-Mar-2015 14:44:00 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/change_pwd.php on line 1
+[31-Mar-2015 14:44:01 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/about.php on line 2
+[31-Mar-2015 14:44:01 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/systems/views/department.php on line 37
+[31-Mar-2015 14:44:01 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/systems/views/currency.php on line 37
+[31-Mar-2015 14:44:02 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/systems/views/company.php on line 38
+[31-Mar-2015 14:44:02 America/New_York] PHP Fatal error:  Call to undefined function base_url() in /home/k8980579/public_html/genesys/application/modules/systems/views/groups.php on line 7
+[31-Mar-2015 14:44:03 America/New_York] PHP Fatal error:  Call to undefined function l() in /home/k8980579/public_html/genesys/application/modules/systems/views/setup_documents.php on line 37

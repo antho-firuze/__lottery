@@ -1,0 +1,2 @@
+[31-Mar-2015 14:47:41 America/New_York] PHP Warning:  require_once(_MPDF_PATHclasses/ttfontsuni.php): failed to open stream: No such file or directory in /home/k8980579/public_html/genesys/application/third_party/mpdf/classes/ttfontsuni_analysis.php on line 3
+[31-Mar-2015 14:47:41 America/New_York] PHP Fatal error:  require_once(): Failed opening required '_MPDF_PATHclasses/ttfontsuni.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/k8980579/public_html/genesys/application/third_party/mpdf/classes/ttfontsuni_analysis.php on line 3

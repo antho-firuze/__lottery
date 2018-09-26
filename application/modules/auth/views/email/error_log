@@ -1,0 +1,2 @@
+[31-Mar-2015 14:43:50 America/New_York] PHP Fatal error:  Call to undefined function anchor() in /home/k8980579/public_html/genesys/application/modules/auth/views/email/forgot_password.tpl.php on line 4
+[31-Mar-2015 14:43:50 America/New_York] PHP Fatal error:  Call to undefined function anchor() in /home/k8980579/public_html/genesys/application/modules/auth/views/email/activate.tpl.php on line 4

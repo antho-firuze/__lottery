@@ -1,0 +1,2 @@
+[31-Mar-2015 14:45:02 America/New_York] PHP Fatal error:  Class 'PHPExcel_RichText_TextElement' not found in /home/k8980579/public_html/genesys/application/third_party/PHPExcel/RichText/Run.php on line 34
+[31-Mar-2015 14:45:02 America/New_York] PHP Fatal error:  Interface 'PHPExcel_RichText_ITextElement' not found in /home/k8980579/public_html/genesys/application/third_party/PHPExcel/RichText/TextElement.php on line 35
