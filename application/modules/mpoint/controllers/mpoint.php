@@ -1271,8 +1271,15 @@ class MPoint extends CI_Controller
 
 		$mdl 	= 'member';
 		
-		if ( $action == 'c' ) {
+		if ( in_array($action, ['c', 'u']) ) {
 			$data = $this->input->post();
+			foreach($data as $k => $v)
+				if ($v == '' || empty($v))
+					$data[$k] = NULL;
+		}
+		
+		if ( $action == 'c' ) {
+			// $data = $this->input->post();
 			
 			// ============= VALIDITY SECTION
 			if ( empty($data) ) 
@@ -1375,7 +1382,7 @@ class MPoint extends CI_Controller
 		}
 		
 		if ( $action == 'u' ) {
-			$data = $this->input->post();
+			// $data = $this->input->post();
 			
 			// ============= VALIDITY SECTION
 			if ( empty($data) ) 

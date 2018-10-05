@@ -53,7 +53,8 @@ $autoload['packages'] = array();
 */
 
 // $autoload['libraries'] = array('database', 'datamapper', 'session', 'auth/ion_auth', 'systems/My_Template');
-$autoload['libraries'] = array('database', 'session', 'auth/ion_auth', 'systems/My_Template');
+// $autoload['libraries'] = array('database', 'session', 'auth/ion_auth', 'systems/My_Template');
+$autoload['libraries'] = array('session', 'auth/ion_auth', 'systems/My_Template');
 
 
 /*
@@ -111,7 +112,8 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('shared/shared_model', 'systems/systems_model');
+// $autoload['model'] = array('shared/shared_model', 'systems/systems_model');
+$autoload['model'] = array('shared/shared_model');
 
 
 /* End of file autoload.php */

@@ -49,6 +49,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = '103.229.72.52';
+// $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'k9678790_root';
 $db['default']['password'] = 'Admin@123';
 $db['default']['database'] = 'k9678790_db_lottery';

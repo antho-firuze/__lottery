@@ -625,8 +625,10 @@ if ( ! function_exists('db_date_format'))
 		// return $tmp[2].'-'.$tmp[1].'-'.$tmp[0];
 		
 		// dd/mm/yyyy => yyyy-mm-dd
-		list($tmp[2], $tmp[1], $tmp[0]) = explode('/', $date);
-		return implode('-', $tmp);
+		// list($tmp[2], $tmp[1], $tmp[0]) = explode('/', $date);
+		list($d, $m, $y) = explode('/', $date);
+		// return implode('-', $tmp);
+		return implode('-', [$y, $m, $d]);
 	}
 }
 
